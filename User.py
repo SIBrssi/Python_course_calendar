@@ -11,7 +11,7 @@ def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
 
 
-class  User:
+class User:
     def __init__(self, login: object, password: object) -> object:
         self.login = login
         self.password = hash_password(password)
