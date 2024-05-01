@@ -15,8 +15,6 @@ import tempfile
 import unittest
 
 
-
-
 class DataStorage:
     _instance = None
 
