@@ -38,6 +38,10 @@ class Calendar:
             self.events.remove(event)
 
     def find_events_in_range(self, start_date: date, end_date: date) -> object:
+        """
+
+        :rtype: object
+        """
         found_events = []
         for event in self.events:
             if is_event_in_range(event, start_date, end_date):
